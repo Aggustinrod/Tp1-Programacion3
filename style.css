@@ -6,7 +6,7 @@
 
 }
 
-.Barra
+.barra
 {
     display: flex;
     justify-content: space-between;
@@ -19,8 +19,62 @@
     position: sticky;
 }
 
+
+.hero
+{
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image:url(https://yourfiles.cloud/uploads/3a879910a7c1b72de83366fd846cadd3/119177911_2774421042795753_2098286975113185085_o.jpg);
+    display: flex;
+    position: sticky;
+    
+    
+
+}
+.contenedor {
+  
+  max-width: 100%;
+  margin: 0 auto;
+  
+}
+
 body 
 {
     font-family: 'Times New Roman', Times, serif;
+    background-color:#ede8d0;
+    
+    
+}
+
+.info
+{
+    align-items: center;
     background-color:white;
+    color: black;
+}
+
+.producto {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #e5d5c5;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.pie
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: black;
+    font-style: italic;
+    color: white;
+    font-size: 18px;
+    bottom: 0;
 }
