@@ -1,0 +1,26 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.Barra
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: black;
+    font-style: italic;
+    color: white;
+    font-size: 18px;
+    position: sticky;
+}
+
+body 
+{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:white;
+}
