@@ -1,3 +1,9 @@
+:root
+{
+    --color--letras:  #F5F5F5;
+    --estilo--letra:italic;
+}
+
 *
 {
     margin: 0;
@@ -6,6 +12,7 @@
 
 }
 
+
 .barra
 {
     display: flex;
@@ -13,49 +20,96 @@
     align-items: center;
     padding: 10px 15px;
     background-color: black;
-    font-style: italic;
-    color: white;
+    font-style:var(--estilo--letra);
+    color:var(--color--letras);
     font-size: 18px;
     position: sticky;
+    z-index: 1;
+    top:0;
+    
+    
+    
+}
+a
+{
+  color: var(--color--letras);
+  margin: 8px;
+  text-decoration: none; 
+  
+}
+
+a:hover
+{
+  color: #e74c3c;
 }
 
 
 .hero
 {
-    align-items: center;
+    text-align: center;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-image:url(https://yourfiles.cloud/uploads/3a879910a7c1b72de83366fd846cadd3/119177911_2774421042795753_2098286975113185085_o.jpg);
-    display: flex;
-    position: sticky;
+    color:var(--color--letras);
+    font-style: var(--estilo--letra);
     
     
-
+    
 }
+
 .contenedor {
   
   max-width: 100%;
   margin: 0 auto;
+  
   
 }
 
 body 
 {
     font-family: 'Times New Roman', Times, serif;
-    background-color:#ede8d0;
+    background-color:burlywood;
+    font-style:var(--estilo--letra);
     
     
 }
 
 .info
 {
-    align-items: center;
-    background-color:white;
-    color: black;
+    
+    background-color:black;
+    color:beige;
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+    border:2px solid brown;
+    text-wrap: wrap;
+    text-align: center;
+    width: 50%;
+    left:25vw;
+    margin: 20px;
+    
+    
+    
 }
+
+fieldset 
+{
+    border-radius: 8px solid grey;
+    background-color: brown;
+    color: #e5d5c5;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    justify-content: space-between;
+
+
+}
+
+
 
 .producto {
   position: relative;
@@ -65,6 +119,8 @@ body
   padding: 1rem 1.25rem;
   margin-bottom: 1rem;
 }
+
+
 
 .pie
 {
