@@ -2,6 +2,7 @@
 {
     --color--letras:  #F5F5F5;
     --estilo--letra:italic;
+    --color--efecto: #e74c3c;
 }
 
 *
@@ -26,6 +27,7 @@
     position: sticky;
     z-index: 1;
     top:0;
+    border: 2px solid brown;
     
     
     
@@ -40,7 +42,7 @@ a
 
 a:hover
 {
-  color: #e74c3c;
+  color:var(--color--efecto)
 }
 
 
@@ -98,15 +100,34 @@ body
 
 fieldset 
 {
-    border-radius: 8px solid grey;
-    background-color: brown;
+    border-radius: 8px;
+    border: 2px solid brown;; 
+    background-color: black;
     color: #e5d5c5;
     align-items: center;
     text-align: center;
     position: sticky;
     justify-content: space-between;
+    margin: 20px;
+    
 
 
+}
+fieldset button
+{
+    background-color: black;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: transform 0,5s ease;
+    border: 2px solid brown;
+    margin: 3px;
+}
+
+fieldset button:hover
+{
+  color: var(--color--efecto);
+  transform: scale(1,1);
+  box-shadow:2px 2px 10px brown ;
 }
 
 
@@ -118,8 +139,13 @@ fieldset
   border-radius: 8px;
   padding: 1rem 1.25rem;
   margin-bottom: 1rem;
+  align-content: center;
 }
 
+.precio
+ {
+    color: brown;
+ }
 
 
 .pie
@@ -133,4 +159,5 @@ fieldset
     color: white;
     font-size: 18px;
     bottom: 0;
+    border: 2px solid brown;
 }
