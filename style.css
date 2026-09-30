@@ -187,8 +187,10 @@ fieldset button:hover
    
   display: flex;
   flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin: 100px;
+  align-items: stretch;
 
   
   
@@ -199,26 +201,60 @@ fieldset button:hover
   position: relative;
   border: 1px solid #e5d5c5;
   border-radius: 8px;
-  padding: 1rem 1.25rem;
+  padding: 15px;
   margin-bottom: 1rem;
   align-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  width: 25%;
+  width: 250px;
   align-items: center;
   justify-content: center;
   color: var(--color--letras);
-  background-color: black;
+  background-color:rgba(0, 0, 0, 0.9);
   padding: 4px 24px 24px;
   margin: 10px;
+  flex-direction: column;
   
 }
+.foto
+{   
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    border-radius: 8px;
+
+}
+
+
+.producto:nth-child(1) .foto{background-image: url("https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtYmVjMy00YjRiLTkxMWUtNzZkMDNiYjZhNmViXkEyXkFqcGc@._V1_.jpg");}
+.producto:nth-child(2) .foto{background-image: url("");}
+.producto:nth-child(3) .foto{background-image: url("");}
+.producto:nth-child(4) .foto{background-image: url("");}
+.producto:nth-child(5) .foto{background-image: url("");}
+.producto:nth-child(6) .foto{background-image: url("");}
 
 .oferta
  {
+    display: flex;
     border-radius: 10px;
     color: var(--color--letras);
-    background-color: burlywood;
+    background-color: brown;
+    width: 65px;
+    justify-content: center;
+    position: sticky;
+    flex-wrap: wrap;
+    top: -13px;
+    left: 5%;
+    
+    
+ }
+ 
+ .precio{
+    
+    color:aquamarine;
  }
 
 
@@ -236,6 +272,7 @@ fieldset button:hover
     border: 2px solid black;
     flex-wrap: wrap;
     position: relative;
+    
 
     
 }
