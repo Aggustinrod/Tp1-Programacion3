@@ -62,13 +62,12 @@ a:hover
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-image:url(/hero-quintana.jpg);
-     display: flex;
+    background-image:url(./Fotos/hero-quintana.jpg);
+    display: flex;
     flex-direction: column;
     color:var(--color--letras);
     font-family:var(--tipo--letra);
-    text-shadow: 2px 2px 2px black;
-    font-size: 20px;  
+    text-shadow: 2px 2px 2px black; 
     flex-wrap: wrap;          
 }
 
@@ -102,7 +101,7 @@ body
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-image:url(imagen.fondo.body.jpg);
+    background-image:url(./Fotos/imagen.fondo.body.jpg);
     flex-wrap: wrap;
     
     
@@ -112,7 +111,7 @@ body
 .info
 {
     
-    background-color:black;
+    background-color:rgba(0, 0, 0, 0.9);
     color: #e5d5c5;
     position: relative;
     padding: 10px;
@@ -185,12 +184,18 @@ fieldset button:hover
 
 .productos{
    
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   flex-wrap: wrap;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin: 100px;
+  flex-direction: row;
+  justify-content: center;
   align-items: stretch;
+  gap: 16px;
+  padding: 24px;
+  width: 80%;
+  margin: 0 auto;
+  align-items: stretch;
+  box-sizing: border-box;
 
   
   
@@ -198,24 +203,42 @@ fieldset button:hover
 }
 .producto {
   
-  position: relative;
+  display: flex;
   border: 1px solid #e5d5c5;
   border-radius: 8px;
   padding: 15px;
-  margin-bottom: 1rem;
-  align-content: center;
   flex-wrap: wrap;
   gap: 10px;
   width: 250px;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: var(--color--letras);
   background-color:rgba(0, 0, 0, 0.9);
   padding: 4px 24px 24px;
   margin: 10px;
   flex-direction: column;
+  transition: all 0.5s ease;
   
 }
+.producto:hover{
+
+transform: scale(1.1);
+border: 2px solid var(--color--efecto);
+
+}
+.tituloprod
+{
+  text-align: center;
+  color: var(--color--letras);
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: var(--tipo--letra);
+  font-size: 40px;
+  flex-wrap: wrap;
+  text-shadow:2px 2px 2px black;
+}
+
 .foto
 {   
     width: 100%;
@@ -228,13 +251,6 @@ fieldset button:hover
 
 }
 
-
-.producto:nth-child(1) .foto{background-image: url("https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtYmVjMy00YjRiLTkxMWUtNzZkMDNiYjZhNmViXkEyXkFqcGc@._V1_.jpg");}
-.producto:nth-child(2) .foto{background-image: url("");}
-.producto:nth-child(3) .foto{background-image: url("");}
-.producto:nth-child(4) .foto{background-image: url("");}
-.producto:nth-child(5) .foto{background-image: url("");}
-.producto:nth-child(6) .foto{background-image: url("");}
 
 .oferta
  {
@@ -275,4 +291,13 @@ fieldset button:hover
     
 
     
+}
+
+@media(minwidh=700px)
+{
+    .barra{
+
+        flex-direction: column;
+    }
+     
 }
