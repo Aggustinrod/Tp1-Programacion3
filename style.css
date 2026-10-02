@@ -61,7 +61,7 @@ a:hover
 .hero
 {
     text-align: center;
-    height: 100vh ;
+    height: 100dvh ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -77,13 +77,13 @@ a:hover
 
 .hero h1 
 {
-    font-size: 64px;
+    font-size: 54px;
     margin-top: 15px;
 }
 
 .hero h3
 {
-    font-size:84px;
+    font-size:64px;
 }
 
 
@@ -308,7 +308,7 @@ border: 2px solid var(--color--efecto);
 
 
 
-@media(width<=800px)
+@media(width<=750px)
 {
     .barra{
 
@@ -333,6 +333,20 @@ border: 2px solid var(--color--efecto);
         padding: 4px;
         
 
+    }
+    .hero {
+        min-height: 100vh;
+        height: auto;
+        padding: 40px 20px;
+        
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+    }
+
+    .hero h3 {
+        font-size: clamp(2.5rem, 10vw, 4rem);
     }
     
      
