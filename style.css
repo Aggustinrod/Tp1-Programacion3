@@ -31,12 +31,17 @@
     width: 100%;
     padding: 15px;
 }
+.logo
+{
+    text-align: center;
+}
 
 .barra ul
 {
     display: flex;
     gap: 20px;
     list-style: none;
+    flex-direction: row;
 }
 
 a
@@ -155,6 +160,8 @@ fieldset
     font-family: var(--tipo--letra);
     flex-wrap: wrap;
     width: 350px;
+    text-shadow: 2px 2px 2px white;
+    
     
     
 
@@ -163,13 +170,13 @@ fieldset
 }
 fieldset button
 {
-    background-color: black;
+    background-color:rgba(0, 0, 0, 0.9);
     color: #ffffff;
     border-radius: 8px;
     padding: 10px;
     border: 2px solid brown;
     margin: 3px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
    
 }
 
@@ -178,6 +185,14 @@ fieldset button:hover
   transform: scale(1.1);
   color: var(--color--efecto); 
   box-shadow:2px 2px 10px brown ;
+}
+
+.datos{
+
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    text-align: left;
 }
 
 
@@ -299,8 +314,8 @@ border: 2px solid var(--color--efecto);
 
         flex-direction: column;
         gap: 10px;
-        padding: 10px;
-        align-items: center;
+        padding: 6px;
+        
     }
     
      
