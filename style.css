@@ -227,13 +227,14 @@ fieldset button:hover
   flex-direction: column;
   gap: 10px;
   
-  z-index: 1;
+  transition: all 0.5s ease;
   
 }
 .producto:hover{
-transition: all 0.5s ease;
+
 transform: scale(1.1);
 border: 2px solid var(--color--efecto);
+
 
 }
 .tituloprod
@@ -298,7 +299,6 @@ border: 2px solid var(--color--efecto);
     bottom: 0;
     border: 2px solid black;
     flex-wrap: wrap;
-    position: relative;
     width: 100%;
     margin-top: 80px;
     
@@ -310,12 +310,29 @@ border: 2px solid var(--color--efecto);
 
 @media(width<=800px)
 {
-    .barra, .pie{
+    .barra{
 
         flex-direction: column;
         gap: 10px;
-        padding: 6px;
+        padding: 8px;
         
+        
+        
+    }
+    .barra ul{
+
+        flex-direction: column;
+        gap: 10px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .pie{
+        flex-direction: column;
+        gap: 10px;
+        padding: 4px;
+        
+
     }
     
      
