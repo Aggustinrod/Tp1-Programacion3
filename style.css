@@ -107,6 +107,7 @@ body
     background-position: center;
     background-image:url(./Fotos/imagen.fondo.body.jpg);
     flex-wrap: wrap;
+    height: 100dvh;
     
     
 }
@@ -338,6 +339,7 @@ border: 2px solid var(--color--efecto);
         min-height: 100vh;
         height: auto;
         padding: 40px 20px;
+        background-attachment:scroll;
         
     }
 
@@ -352,6 +354,10 @@ border: 2px solid var(--color--efecto);
      
     html, body {
     overflow-x: hidden;
+  }
+  body
+  {
+    background-attachment:scroll;
   }
 
   .productos{
